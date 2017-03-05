@@ -1,0 +1,19 @@
+{
+    "Procedure":
+    [
+        {
+            "Function": "ArksEmergencyCall",
+            "Param": "1",
+            "WebhookURL": "https://discordapp.com/api/webhooks/........",
+            "UserName": "",
+            "UserAvatar": ""
+        },
+        {
+            "Function": "NewUserTweet",
+            "Param": "TwitterJP",
+            "WebhookURL": "https://discordapp.com/api/webhooks/........",
+            "UserName": "TwitterJP",
+            "UserAvatar": ""
+        }
+    ]
+}
