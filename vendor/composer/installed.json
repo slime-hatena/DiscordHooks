@@ -1,0 +1,213 @@
+[
+    {
+        "name": "react/promise",
+        "version": "v2.5.0",
+        "version_normalized": "2.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/reactphp/promise.git",
+            "reference": "2760f3898b7e931aa71153852dcd48a75c9b95db"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/reactphp/promise/zipball/2760f3898b7e931aa71153852dcd48a75c9b95db",
+            "reference": "2760f3898b7e931aa71153852dcd48a75c9b95db",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "time": "2016-12-22 14:09:01",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "React\\Promise\\": "src/"
+            },
+            "files": [
+                "src/functions_include.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jan Sorgalla",
+                "email": "jsorgalla@gmail.com"
+            }
+        ],
+        "description": "A lightweight implementation of CommonJS Promises/A for PHP",
+        "keywords": [
+            "promise",
+            "promises"
+        ]
+    },
+    {
+        "name": "mpyw/co",
+        "version": "v1.5.4",
+        "version_normalized": "1.5.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mpyw/co.git",
+            "reference": "e61114ca578dbe78476cc6768300001a5b9eb0fb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mpyw/co/zipball/e61114ca578dbe78476cc6768300001a5b9eb0fb",
+            "reference": "e61114ca578dbe78476cc6768300001a5b9eb0fb",
+            "shasum": ""
+        },
+        "require": {
+            "ext-reflection": "*",
+            "lib-curl": ">=7.20.0",
+            "php": ">=5.5.0",
+            "react/promise": "^2.4"
+        },
+        "require-dev": {
+            "codeception/aspect-mock": "^2.0",
+            "codeception/codeception": "^2.2",
+            "codeception/specify": "*",
+            "mpyw/privator": "^2.0",
+            "php": ">=7.0.0",
+            "satooshi/php-coveralls": "^1.0"
+        },
+        "time": "2016-08-28 14:02:56",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "mpyw\\Co\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "mpyw",
+                "email": "ryosuke_i_628@yahoo.co.jp"
+            }
+        ],
+        "description": "Asynchronous cURL executor simply based on resource and Generator",
+        "keywords": [
+            "asynchronous",
+            "curl",
+            "generator",
+            "http",
+            "parallel"
+        ]
+    },
+    {
+        "name": "mpyw/cowitter",
+        "version": "v1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mpyw/cowitter.git",
+            "reference": "1668ef4c0411ab11a3fbc954f288c5c5e928aee2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mpyw/cowitter/zipball/1668ef4c0411ab11a3fbc954f288c5c5e928aee2",
+            "reference": "1668ef4c0411ab11a3fbc954f288c5c5e928aee2",
+            "shasum": ""
+        },
+        "require": {
+            "ext-hash": "*",
+            "ext-json": "*",
+            "ext-openssl": "*",
+            "lib-curl": ">=7.20.0",
+            "mpyw/co": "^1.5",
+            "php": ">=5.5.0"
+        },
+        "require-dev": {
+            "codeception/aspect-mock": "^2.0",
+            "codeception/codeception": "^2.2",
+            "codeception/specify": "*",
+            "mpyw/privator": "^2.0",
+            "php": ">=7.0.0",
+            "satooshi/php-coveralls": "^1.0"
+        },
+        "time": "2016-08-27 13:11:56",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "mpyw\\Cowitter\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "mpyw",
+                "email": "ryosuke_i_628@yahoo.co.jp"
+            }
+        ],
+        "description": "Asynchronous Twitter client compatible with mpyw/co Generator-based flows.",
+        "keywords": [
+            "api",
+            "async",
+            "asynchronous",
+            "image",
+            "oauth",
+            "paralell",
+            "streaming",
+            "twitter",
+            "upload",
+            "video"
+        ]
+    },
+    {
+        "name": "auroraari/discord-webhooks",
+        "version": "v1.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/AuroraAri/Discord-Webhooks-PHP.git",
+            "reference": "afc4ccb3893ef468056c9adc5b783f89784f23ae"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/AuroraAri/Discord-Webhooks-PHP/zipball/afc4ccb3893ef468056c9adc5b783f89784f23ae",
+            "reference": "afc4ccb3893ef468056c9adc5b783f89784f23ae",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "^0.0.0",
+            "php": "^5.3"
+        },
+        "time": "2016-10-28 17:33:43",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "DiscordWebhooks\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Unlicense"
+        ],
+        "authors": [
+            {
+                "name": "Arianna Story",
+                "email": "ari@ariannastory.com"
+            }
+        ],
+        "description": "A (really) lightweight library to use Discord webhooks",
+        "homepage": "https://github.com/AuroraAri/Discord-Webhooks-PHP",
+        "keywords": [
+            "discord",
+            "discordapp",
+            "library",
+            "php",
+            "webhooks"
+        ]
+    }
+]

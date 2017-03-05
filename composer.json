@@ -1,0 +1,6 @@
+{
+    "require": {
+        "mpyw/cowitter": "1.0",
+        "auroraari/discord-webhooks": "^1.0"
+    }
+}
