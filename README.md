@@ -7,14 +7,14 @@ Discordに簡単に投稿することを目標にした物。
 - ArksEmergencyCall  
 SEGAが運営するPSO2の緊急クエストを通知する。
 - Test  
-パラメーターをそのまま投稿するだけ
+パラメーターをそのまま投稿する。テスト用。
 
 ## 必要なもの
 **php/cronの動作する環境**  
 Twitter Application Managementから取得できるコンシューマーキーなど  
 
 ## 使い方
-- users.jsonに指定の処理を書き加えます。  
+- users.jsonに指定の処理を書き加えます。  なければ作成またはusers_sample.jsonをリネームします。
         {  
             "Function": "上記の機能名",  
             "Param": "パラメーター include",  
