@@ -14,7 +14,7 @@ SEGAが運営するPSO2の緊急クエストを通知する。
 Twitter Application Managementから取得できるコンシューマーキーなど  
 
 ## 使い方
-- users.jsonに指定の処理を書き加えます。  なければ作成またはusers_sample.jsonをリネームします。
+- users.jsonに指定の処理を書き加えます。なければ作成またはusers_sample.jsonをリネームします。  
         {  
             "Function": "上記の機能名",  
             "Param": "パラメーター include",  
