@@ -50,20 +50,19 @@ try{
 }
 
 if(count($statuses) == 0){
-    echo "&nbsp;&nbsp;更新なし";
+    echo "情報更新なし";
 }else{
     $arr->{$screenName}->since = $statuses[0]->id_str;
     
-    
     $pattern = '/.*緊急クエスト予告.*01:(.*)02:(.*)03:(.*)04:(.*)05:(.*)06:(.*)07:(.*)08:(.*)09:(.*)10:(.*)#PSO2.*/isu';
     preg_match($pattern, $statuses[0]->text, $match);
-    // var_dump($match);
+    var_dump($match);
     
     // サーバーオンリー緊急判定
-    if(!empty($match) && $match[$value->Param] != "[発生中]"){
-        if($match[$value->Param] != "―\n"){
-            $str = str_replace(array("\r\n","\n","\r"), '', ":warning:【緊急情報】Ship4 " . (date( "H" ) + 1) . ":00～ " . $match[$value->Param]);
-            
+    if(!empty($match) && (str_replace(array("\r\n","\n","\r","　"," "), '', $match[$value->Param]) != "[発生中]")){
+        if(str_replace(array("\r\n","\n","\r","　"," "), '', $match[$value->Param])  != "―"){
+            $str = str_replace(array("\r\n","\n","\r"), '', "【緊急情報】Ship4 " . (date( "H" ) + 1) . ":00～ " . $match[$value->Param]);
+
             if($str != $arr->string){
                 $discord = new DiscordWebhook($value->WebhookURL);
                 $discord->name($value->UserName != "" ? $value->UserName : $statuses[0]->user->name);
@@ -74,10 +73,11 @@ if(count($statuses) == 0){
                 
                 echo $str;
             }else{
-                echo "緊急発生なし。";
+                echo "同じメッセージのため更新なし。<br>";
+                echo $str;
             }
         }else{
-            echo "同じメッセージのため更新なし。";
+            echo "緊急発生なし。";
         }
     }
     
@@ -86,7 +86,7 @@ if(count($statuses) == 0){
     preg_match($pattern, $statuses[0]->text, $match);
     
     if(!empty($match)){
-        $str = str_replace(array("\r\n","\n","\r"), '', ":warning:【緊急情報】共通 " . $match[1] . "～ " . $match[2]);
+        $str = str_replace(array("\r\n","\n","\r"), '', "【緊急情報】共通 " . $match[1] . "～ " . $match[2]);
         
         if($str != $arr->string){
             $discord = new DiscordWebhook($value->WebhookURL);
