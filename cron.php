@@ -4,6 +4,7 @@ ob_end_flush();
 ob_start('mb_output_handler');
 
 echo date("Y/m/d H:i:s") . "<br>";
+echo 'Current PHP version: ' . phpversion() . "<br>";
 
 // users.jsonをパース
 $json = file_get_contents('users.json');

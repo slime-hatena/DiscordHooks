@@ -65,7 +65,9 @@ foreach ($statuses as $key => $info) {
     $discord->name($value->UserName != "" ? $value->UserName : $info->user->name);
     $discord->avatar($value->UserAvatar != "" ? $value->UserAvatar : $info->user->profile_image_url);
     
-    $discord->send($info->text . "\n");
+    // md記法はエスケープする ` * _
+    $postText = str_replace("_", "\_", str_replace("*", "\*", str_replace("`", "\`", $info->text . "\n")));
+    $discord->send($postText);
     
     if($key >= $PostLimit - 1)  break;
 ob_flush();
